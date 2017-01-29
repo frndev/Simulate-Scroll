@@ -96,7 +96,6 @@
 				TargetAttributes = {
 					A136ADF51E3E4EEE0055CA48 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = X44M3PTYDX;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -261,7 +260,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X44M3PTYDX;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SimulateScroll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.francisco.SimulateScroll;
@@ -274,7 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X44M3PTYDX;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SimulateScroll/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.francisco.SimulateScroll;

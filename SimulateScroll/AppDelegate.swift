@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SimulateScroll
 //
-//  Created by fran on 29/1/17.
+//  Created by frndev on 29/1/17.
 //  Copyright © 2017 Francisco Navarro Aguilar. All rights reserved.
 //
 
