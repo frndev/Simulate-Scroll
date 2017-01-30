@@ -4,7 +4,8 @@ Despite having a class called [UIScrollView](https://developer.apple.com/referen
 
 Well, the first solution I thought (maybe not the best) was using a **View** and add it the **PanGestureRecognizer** in order to capture the user's touches. So I started to code:
 
-	import UIKit
+``` swift
+import UIKit
 
 	class ViewController: UIViewController {
 
@@ -48,7 +49,8 @@ Well, the first solution I thought (maybe not the best) was using a **View** and
 
 		}
 	}
-		
+```					
+
 **Do not forget to connect the** `IBOutlet` **with the UIView on the XIB or Storyboard!!**
 
 ## didScroll method
