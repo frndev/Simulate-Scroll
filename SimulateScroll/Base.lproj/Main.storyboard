@@ -65,9 +65,19 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlz-G5-duY">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="6bG-qU-T1O"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.54290956439393945" green="0.54290956439393945" blue="0.54290956439393945" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="wlz-G5-duY" firstAttribute="leading" secondItem="SZ7-YR-xC7" secondAttribute="leading" id="2QA-hb-3vQ"/>
                                     <constraint firstItem="LqM-W8-Sme" firstAttribute="top" secondItem="F70-yh-rZ3" secondAttribute="bottom" constant="41" id="76Y-Gl-teV"/>
                                     <constraint firstItem="kb5-VO-qsW" firstAttribute="leading" secondItem="F70-yh-rZ3" secondAttribute="leading" id="8Wx-sD-pzN"/>
                                     <constraint firstItem="SZ7-YR-xC7" firstAttribute="centerX" secondItem="fH8-Gf-9cs" secondAttribute="centerX" id="8x3-ad-WGh"/>
@@ -81,7 +91,9 @@
                                     <constraint firstItem="F70-yh-rZ3" firstAttribute="leading" secondItem="LqM-W8-Sme" secondAttribute="leading" id="dY6-Nb-9xa"/>
                                     <constraint firstItem="SZ7-YR-xC7" firstAttribute="top" secondItem="UfU-mE-WjQ" secondAttribute="bottom" constant="78" id="g5G-Aq-hm3"/>
                                     <constraint firstItem="F70-yh-rZ3" firstAttribute="top" secondItem="kb5-VO-qsW" secondAttribute="bottom" constant="36" id="gaZ-7t-MpI"/>
+                                    <constraint firstItem="wlz-G5-duY" firstAttribute="trailing" secondItem="SZ7-YR-xC7" secondAttribute="trailing" id="jOP-09-jSB"/>
                                     <constraint firstItem="LqM-W8-Sme" firstAttribute="trailing" secondItem="UfU-mE-WjQ" secondAttribute="trailing" id="jlS-c5-3xG"/>
+                                    <constraint firstItem="wlz-G5-duY" firstAttribute="top" secondItem="SZ7-YR-xC7" secondAttribute="bottom" constant="62" id="kCZ-Al-hNK"/>
                                     <constraint firstItem="UfU-mE-WjQ" firstAttribute="top" secondItem="LqM-W8-Sme" secondAttribute="bottom" constant="64" id="mSS-Aj-Zc0"/>
                                 </constraints>
                             </view>
@@ -89,7 +101,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="fH8-Gf-9cs" secondAttribute="trailing" id="3Bc-fT-ea0"/>
-                            <constraint firstAttribute="bottom" secondItem="fH8-Gf-9cs" secondAttribute="bottom" constant="-230" id="5YL-sP-RYZ"/>
+                            <constraint firstAttribute="bottom" secondItem="fH8-Gf-9cs" secondAttribute="bottom" constant="-505" id="5YL-sP-RYZ"/>
                             <constraint firstItem="fH8-Gf-9cs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hpk-Pp-e0T"/>
                             <constraint firstItem="fH8-Gf-9cs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jVC-eb-yls"/>
                         </constraints>
