@@ -56,34 +56,42 @@ class ViewController: UIViewController {
 
 First of all, we ensure that it is the 'Pan' gesture with: 
 
-`sender.state == .recognized`
+``` swift 
+sender.state == .recognized
+```
 
 After we have recognized it, we declare some useful variables to store information about our scrollView, superView and pan gesture.
-            
-    let translation = sender.translation(in: self.scrollView).y
-    let y = self.scrollView.frame.origin.y
-    let scrollViewSize = self.scrollView.frame.size.height
-    let viewSize = self.view.frame.size.height
-    var newY = y + translation
-       
+
+``` swift
+let translation = sender.translation(in: self.scrollView).y
+let y = self.scrollView.frame.origin.y
+let scrollViewSize = self.scrollView.frame.size.height
+let viewSize = self.view.frame.size.height
+var newY = y + translation
+```
+
 One problem we have is that scrollView may disappear at the top and at the bottom of the screen. So that we avoid this, we have to check the future position of our scrollView.
 
-	// These conditions avoids scrollView to leave the screen
+``` swift	
+// These conditions avoids scrollView to leave the screen
             
-    if newY > 0 {
-        newY = 0
-    } else if newY + scrollViewSize <  viewSize {
-        newY = -scrollViewSize + viewSize
-    }
+if newY > 0 {
+	newY = 0
+} else if newY + scrollViewSize <  viewSize {
+	newY = -scrollViewSize + viewSize
+}
+```
 
 After that, we can animate the scrollView to simulate the scroll, like this:
-		
-	UIView.animate(withDuration: 0.5, animations: {
+
+``` swift
+UIView.animate(withDuration: 0.5, animations: {
                 
-        self.scrollView.frame = CGRect(x: 0,
-                                       y: newY,
-                                       width: self.scrollView.frame.width,
-                                       height: scrollViewSize)
-    })
-    
+	self.scrollView.frame = CGRect(x: 0,
+								   y: newY,
+								   width: self.scrollView.frame.width,
+								   height: scrollViewSize)
+})
+```
+
 It can be easily improve, but this code was implemented for simply curiosity, how could I solve this? That was the first thing on my mind.
