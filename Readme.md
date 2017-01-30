@@ -23,30 +23,31 @@ Well, the first solution I thought (maybe not the best) was using a **View** and
     	func didScroll(sender : UIPanGestureRecognizer) {
     		if sender.state == .recognized {
             
-            let translation = sender.translation(in: self.scrollView).y
-            let y = self.scrollView.frame.origin.y
-            let scrollViewSize = self.scrollView.frame.size.height
-            let viewSize = self.view.frame.size.height
-            var newY = y + translation
+            	let translation = sender.translation(in: self.scrollView).y
+	            let y = self.scrollView.frame.origin.y
+    	        let scrollViewSize = self.scrollView.frame.size.height
+        	    let viewSize = self.view.frame.size.height
+	            var newY = y + translation
+    	        
+        	    // These conditions avoids scrollView to leave the screen
             
-            // These conditions avoids scrollView to leave the screen
+            	if newY > 0 {
+                	newY = 0
+	            } else if newY + scrollViewSize <  viewSize {
+    	            newY = -scrollViewSize + viewSize
+        	    }
             
-            if newY > 0 {
-                newY = 0
-            } else if newY + scrollViewSize <  viewSize {
-                newY = -scrollViewSize + viewSize
-            }
-            
-            UIView.animate(withDuration: 0.5, animations: {
+            	UIView.animate(withDuration: 0.5, animations: {
                 
-                self.scrollView.frame = CGRect(x: 0,
-                                            y: newY,
-                                            width: self.scrollView.frame.width,
-                                            height: scrollViewSize)
-             })
-        }
+                	self.scrollView.frame = CGRect(x: 0,
+                                            	   y: newY,
+	                                               width: self.scrollView.frame.width,
+       	                                           height: scrollViewSize)
+             	})
+        	}
 
 		}
+	}
 		
 **Do not forget to connect the** `IBOutlet` **with the UIView on the XIB or Storyboard!!**
 
