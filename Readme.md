@@ -1,6 +1,6 @@
 # Scrolling without UIScrollView
 
-Despite having a class called UIScrollView for this purpose, i saw this question on Stackoverflow and I thought how I could solve this on a different way.
+Despite having a class called [UIScrollView](https://developer.apple.com/reference/uikit/uiscrollview) for this purpose, i saw this [question](http://es.stackoverflow.com/questions/4517/scrollview-sin-usar-uiscrolview) on Stackoverflow and I thought how I could solve this on a different way.
 
 Well, the first solution I thought (maybe not the best) was using a **View** and add it the **PanGestureRecognizer** in order to capture the user's touches. So I started to code:
 
@@ -85,5 +85,3 @@ After that, we can animate the scrollView to simulate the scroll, like this:
     })
     
 It can be easily improve, but this code was implemented for simply curiosity, how could I solve this? That was the first thing on my mind.
-
-Full project on Github :)
