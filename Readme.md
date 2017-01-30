@@ -25,12 +25,12 @@ class ViewController: UIViewController {
 		if sender.state == .recognized {
 
 			let translation = sender.translation(in: self.scrollView).y
-				let y = self.scrollView.frame.origin.y
+			let y = self.scrollView.frame.origin.y
 			let scrollViewSize = self.scrollView.frame.size.height
-				let viewSize = self.view.frame.size.height
-				var newY = y + translation
+			let viewSize = self.view.frame.size.height
+			var newY = y + translation
 
-				// These conditions avoids scrollView to leave the screen
+			// These conditions avoids scrollView to leave the screen
 
 			if newY > 0 {
 				newY = 0
